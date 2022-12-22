@@ -28,6 +28,12 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
 .container {
     display: block;
     margin-left: auto;
@@ -154,13 +160,13 @@ ul {
     display: flex;
 }
 
-.header nav ul li {
-    padding: 40px 10px;
+.header nav ul li a {
+    padding: 40px 10px 38px 10px;
     font-size: 14px;
 
 }
 
-.header nav ul li:not(:first-child):hover {
+.header nav ul li:not(:first-child):hover a {
     color: var(--1st-color);
     border-bottom: 1px solid var(--1st-color);
     cursor: pointer;
@@ -191,7 +197,7 @@ ul {
         background-color: rgb(0 0 0 / 60%);
     }
 
-    .header ul li {
+    .header ul li a {
         padding: 15px !important;
     }
 }
